@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여의도 마사지 링크 | 정보 – 마사지 가이드 & 힐링 꿀팁</title>
+    <meta name="description" content="여의도 마사지 링크에서 알려주는 마사지 꿀팁과 이용 가이드. 근육 뭉침 해소부터 힐링까지, 여의도 마사지의 모든 정보를 확인하세요.">
+    <meta name="keywords" content="여의도 마사지, 여의도 마사지 링크, 마사지 정보, 마사지 가이드, 근육 이완, 힐링 팁, 여의도">
+    <link rel="canonical" href="https://t3b07-yd-massage-link-1.vercel.app/info">
+    <meta property="og:title" content="여의도 마사지 링크 | 정보 – 마사지 & 힐링 가이드">
+    <meta property="og:description" content="여의도 마사지 링크에서 알려주는 마사지 꿀팁과 이용 가이드. 근육 뭉침 해소부터 힐링까지, 여의도 마사지의 모든 정보를 확인하세요.">
+    <meta property="og:url" content="https://t3b07-yd-massage-link-1.vercel.app/info">
+    <meta property="og:type" content="website">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: #f8f9fa; color: #222; line-height: 1.7; }
+        a { color: #2b6cb0; text-decoration: none; transition: color 0.2s; }
+        a:hover { color: #1a365d; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul, ol { list-style: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header { background: #fff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 100; }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #222; letter-spacing: -0.5px; }
+        .logo span { color: #2b6cb0; }
+        .nav-links { display: flex; gap: 24px; }
+        .nav-links a { font-size: 0.95rem; font-weight: 500; color: #444; padding: 6px 0; border-bottom: 2px solid transparent; }
+        .nav-links a:hover { color: #2b6cb0; border-bottom-color: #2b6cb0; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; background: none; border: none; padding: 8px; }
+        .hamburger span { display: block; width: 26px; height: 3px; background: #222; margin: 4px 0; border-radius: 2px; transition: 0.3s; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; width: 100%; background: #fff; border-bottom: 1px solid #eaeaea; padding: 16px 20px; gap: 12px; }
+            .nav-links.active { display: flex; }
+            .hamburger { display: flex; }
+        }
+
+        .page-hero { background: linear-gradient(135deg, #e8f0fe 0%, #fff 100%); padding: 60px 0 40px; text-align: center; }
+        .page-hero h1 { font-size: 2.2rem; font-weight: 700; color: #1a202c; margin-bottom: 12px; }
+        .page-hero p { font-size: 1.1rem; color: #555; max-width: 680px; margin: 0 auto; }
+
+        .info-section { padding: 60px 0; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        @media (max-width: 768px) { .info-grid { grid-template-columns: 1fr; } }
+        .info-card { background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); border: 1px solid #f0f0f0; }
+        .info-card h2 { font-size: 1.4rem; font-weight: 600; color: #1a202c; margin-bottom: 16px; border-left: 4px solid #2b6cb0; padding-left: 14px; }
+        .info-card p { color: #444; margin-bottom: 12px; font-size: 0.98rem; }
+        .info-card ul { margin-top: 8px; }
+        .info-card ul li { padding: 6px 0; padding-left: 20px; position: relative; color: #444; font-size: 0.98rem; }
+        .info-card ul li::before { content: "✓"; position: absolute; left: 0; color: #2b6cb0; font-weight: 700; }
+
+        .faq-section { background: #fff; padding: 60px 0; border-top: 1px solid #eaeaea; }
+        .faq-section h2 { font-size: 1.8rem; font-weight: 700; text-align: center; margin-bottom: 40px; color: #1a202c; }
+        .faq-item { border-bottom: 1px solid #eaeaea; padding: 20px 0; }
+        .faq-item:first-child { border-top: 1px solid #eaeaea; }
+        .faq-question { font-weight: 600; font-size: 1.05rem; color: #222; cursor: default; margin-bottom: 8px; }
+        .faq-answer { color: #555; font-size: 0.95rem; line-height: 1.6; }
+
+        .cta-banner { background: #2b6cb0; color: #fff; text-align: center; padding: 48px 20px; border-radius: 16px; margin: 40px 0; }
+        .cta-banner h3 { font-size: 1.6rem; font-weight: 700; margin-bottom: 12px; }
+        .cta-banner p { font-size: 1.05rem; opacity: 0.9; margin-bottom: 20px; }
+        .cta-banner .tel-link { display: inline-block; background: #fff; color: #2b6cb0; padding: 12px 32px; border-radius: 40px; font-weight: 600; font-size: 1.1rem; transition: 0.2s; }
+        .cta-banner .tel-link:hover { background: #f0f0f0; color: #1a365d; }
+
+        footer { background: #1a202c; color: #a0aec0; text-align: center; padding: 24px 0; font-size: 0.85rem; }
+        footer a { color: #cbd5e0; }
+        footer a:hover { color: #fff; }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<header>
+    <div class="container nav-inner">
+        <div class="logo"><span>링크</span> 마사지</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="/">홈</a>
+            <a href="/info">정보</a>
+            <a href="/review">후기</a>
+            <a href="/contact">예약</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>여의도 마사지, 제대로 알고 즐기자</h1>
+            <p>근육 뭉침부터 일상 피로까지 – 링크 마사지가 알려주는 힐링 꿀팁과 이용 가이드</p>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h2>마사지, 언제 받는 게 좋을까?</h2>
+                    <p>솔직히, '딱 좋은 타이밍'이라는 게 있어. 나 같은 경우는 일주일에 3번 이상 운동하고 나면 어깨가 돌덩이처럼 굳거든. 그럴 때가 바로 마사지 받을 타이밍이야.</p>
+                    <p>근데 너가 운동을 안 해도, 하루 종일 책상에 앉아 있거나 스마트폰 보는 시간이 길다면? 이미 몸이 보내는 신호를 무시하고 있는 거야. 자주 피로하고, 잠이 안 오거나 자고 일어나도 개운하지 않다면 마사지 한 번 받아보는 걸 추천해.</p>
+                    <p>여의도에서 일하는 친구들은 점심시간이나 퇴근 후에 많이 오더라. 나도 그래. 일 끝나고 1시간만 투자하면 다음 날 개운하게 출근할 수 있어.</p>
+                </div>
+                <div class="info-card">
+                    <h2>링크 마사지만의 특별함</h2>
+                    <p>사실 마사지 샵 많잖아? 근데 여기는 분위기가 확 달라. '아, 여긴 진짜 내 몸을 생각해주는구나' 싶은 느낌? 처음 왔을 때부터 실장님이 내 근육 상태랑 생활 패턴을 꼼꼼히 물어보더라고.</p>
+                    <ul>
+                        <li><strong>맞춤 케어:</strong> 똑같은 코스가 없어. 그날 내 컨디션에 따라 시술 강도가 달라져.</li>
+                        <li><strong>친근한 분위기:</strong> 너무 격식 있거나 부담스럽지 않아. 마치 형, 누나 집에 놀러 온 기분?</li>
+                        <li><strong>깔끔한 시설:</strong> 샤워실이랑 휴게 공간이 진짜 청결해. 예민한 나도 만족했음.</li>
+                    </ul>
+                    <p>특히 관리사분들이 진짜 프로페셔널하면서도 편하게 대해줘서 좋아. 가끔 이런 얘기도 해. "야, 너 요즘 스트레스 받지? 여기가 이렇게 뭉쳤어."ㅋㅋㅋ 맞는 말이라 반박을 못 하겠더라.</p>
+                </div>
+                <div class="info-card">
+                    <h2>처음이면 이 코스 어때?</h2>
+                    <p>처음 가는 사람들은 뭘 받아야 할지 고민되잖아. 내 경험상, 첫 방문이면 '스웨디시 60분' 강추한다. 너무 세지 않으면서도 근육 풀어주는 게 딱 좋아. 나도 첨에 이 코스로 입문했거든.</p>
+                    <p>평소에 운동 많이 하거나 어깨가 특히 뭉친 사람은 '스포츠 마사지 90분'도 괜찮아. 좀 아플 수 있는데, 풀리고 나면 세상이 가볍게 느껴져. 진짜다. 내가 보증한다.</p>
+                    <p>그리고 팁 하나! 예약할 때 "어깨랑 목 위주로 부탁해요"라고 말하면 더 집중적으로 관리해줘. 나만의 꿀팁이야.</p>
+                </div>
+                <div class="info-card">
+                    <h2>방문 전 체크리스트</h2>
+                    <p>가기 전에 이거만 확인하면 완벽:</p>
+                    <ul>
+                        <li>예약은 꼭 미리! 당일 예측 불가니까 전화나 카톡으로 시간 확인하고 가.</li>
+                        <li>편한 옷 입고 가. 갈아입을 속옷도 챙기면 더 좋고.</li>
+                        <li>너무 배부르거나 공복은 피해줘. 가벼운 식사 후 1시간 정도 지나고 가는 게 베스트.</li>
+                        <li>샤워는 미리 하고 가도 되고, 현장에서 해도 돼. 나는 보통 퇴근 후 바로 가니까 거기서 씻고 마사지 받아.</li>
+                    </ul>
+                    <p>참, 그리고 중요한 거! 마사지 받는 동안 아프면 바로 말해. 참을 필요 없어. "아파요" 하면 바로 강도 조절해주니까 부담 갖지 마.</p>
+                </div>
+            </div>
+
+            <div class="cta-banner">
+                <h3>지금 바로 힐링 예약하자</h3>
+                <p>일상에 지친 너를 위한 딱 1시간, 여의도 링크 마사지에서 기다리고 있을게.</p>
+                <a href="tel:01012345678" class="tel-link">📞 010-1234-5678 (클릭 시 통화 연결)</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            <div class="faq-item">
+                <div class="faq-question">Q. 첫 방문인데 예약 필수인가요?</div>
+                <div class="faq-answer">A. 네, 워크인도 가능하지만 원하는 시간대가 없을 수 있어요. 전화나 문자로 미리 예약하는 걸 추천해요. 특히 저녁 시간대는 인기가 많아서 빨리 마감되거든요.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q. 남성도 이용 가능한가요?</div>
+                <div class="faq-answer">A. 물론이죠! 남녀노소 누구나 환영입니다. 여의도에서 일하는 직장인 남성분들도 단골이 많아요. 관리사분이 성별에 따라 배정되니 걱정 마세요.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q. 주차는 가능한가요?</div>
+                <div class="faq-answer">A. 네, 건물 내 주차장이 있어요. 다만 자리가 많지 않으니 대중교통 이용을 추천드려요. 여의도역에서 도보 5분 거리라 찾기도 쉬워요.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q. 마사지 후 바로 운동해도 되나요?</div>
+                <div class="faq-answer">A. 아니요! 마사지 받은 날은 근육이 풀린 상태라 무리하면 오히려 독이에요. 최소 6~8시간은 휴식하는 게 좋아요. 다음 날 운동하는 걸 추천합니다.</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 <a href="/">여의도 마사지 링크</a> | 힐링과 활력의 공간 | <a href="tel:01012345678">010-1234-5678</a></p>
+        <p style="margin-top: 6px;">여의도 마사지, 마사지 링크, 여의도 힐링</p>
+    </div>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
+
+</body>
+</html>
